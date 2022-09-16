@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <title>Игра «Линии»</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="base.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<div id="page-half"><div><br></div></div>
+<div id="page-center">
+    <div id="right-column">
+        <h5 id="scores">0</h5>
+        <div id="highscores"><br></div>
+        <div class="preview-box">
+            <h6><span id="next-turn">Следующий ход</span></h6>
+            <ul id="preview">
+                <li><br></li>
+                <li><br></li>
+                <li><br></li>
+            </ul>
+        </div>
+        <div class="description">
+            <p>Цель игры — собрать как можно больше линий из пяти и более шариков одного цвета.</p>
+        </div>
+        <div class="new-game">
+            <img src="new-game.png" onclick="linesGrid.init()" style="cursor: pointer;">
+        </div>
+        <div id="liderboard" class ="liderboard">
+            <img src="chart.png" onclick="linesGrid.f2()" style="cursor: pointer; width: 50%;height: 50%">
+        </div>
+        <div id="liderboardTable">
+            <ul>
+            </ul>
+        </div>
+    </div>
+
+    <div id="game-field">
+        <div id="grid"><br></div>
+        <div id="balls"><br></div>
+    </div>
+    <script type="text/javascript">
+        linesGrid.init();
+    </script>
+</div>
+</body>
+</html>
